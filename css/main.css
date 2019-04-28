@@ -1,0 +1,141 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    background-color: #FEFDFD;
+    display: none;
+    align-items: stretch;
+}
+
+.background-text {
+    position: absolute;
+    opacity: 0.22;
+    font-size: 20vw;
+    z-index: -1;
+    margin: 0;
+    top: 50%;
+    left: 56%;
+    transform: translate(-50%, -50%);
+}
+
+h4.background-text {
+    top: 62%;
+    font-size: 7vw;
+}
+
+table,
+td,
+th {
+    border: 1px solid #9C9C9C;
+}
+
+table {
+    margin: 14px auto;
+    padding: 7vh 0;
+    border-collapse: collapse;
+}
+
+dialog {
+    height: 100%;
+    width: 100%;
+    border: none;
+    padding: 0;
+    background-color: rgba(29, 29, 29, 0.85);
+    position: fixed;
+}
+
+sup {
+    font-size: 50%;
+}
+
+.fade-in {
+    animation-name: fade-in;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-out;
+}
+
+.fade-out {
+    animation-name: fade-out;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-out;
+}
+
+.default-cursor {
+    cursor: default;
+}
+
+.center {
+    text-align: center;
+}
+
+.font {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.button {
+    border-radius: 500px;
+    outline: none;
+    margin: 0 auto 0;
+    background-color: Transparent;
+}
+
+.color {
+    color: #FEFDFD;
+    background-color: #1B19CD;
+}
+
+.border-color {
+    border-color: #1B19CD;
+}
+
+.off-color {
+    color: #7C7EFB;
+}
+
+
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+.tooltip span {
+    display: none
+}
+
+@media (orientation: landscape) {
+    .tooltip:hover {
+        cursor: help;
+        position: relative;
+    }
+
+    .tooltip:hover span {
+        font-size: 1vw;
+        padding: 6px;
+        white-space: pre-wrap;
+        width: 12vw;
+        display: block;
+        z-index: 100;
+        background-color: #EDEDED;
+        color: black;
+        border-radius: 6px;
+        left: 2vw;
+        top: 4vw;
+        position: absolute;
+    }
+}
